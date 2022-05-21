@@ -1,0 +1,162 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #32373B;
+  border-radius: 10px;
+}
+header{
+  z-index: 1;
+  position: fixed;
+  background: #4A5859;
+  padding: 20px;
+  width: calc(100%);
+  top: 0;
+  height: 70px;
+  font-family: 'Roboto Slab', serif;
+}
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  transition-property: color;
+  top: 0px;
+  margin-left: 130px;
+}
+
+label #sidebar_btn:hover{
+  color: #008AB8;
+}
+
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+.current_month{
+  border: 1px solid white;
+  padding: 10px;
+  float: right;
+  margin-right: 50px;
+}
+.search-box{
+  background-color: #fff;
+  height: 40px;
+  border-radius: 40px;
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 15px;
+}
+.search-box:hover > .search-btn{
+  background: #fff;
+  color: #032745;
+}
+.search-btn{
+  color: #032745;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float:left;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.set{
+  margin-top: -48px;
+}
+.dropdown_menu a:visited
+{
+  color: #fff;
+}
+.dropdown_menu ul{
+  background-color:  #22242A;
+  color: #fff;
+}
+.dropdown_menu ul li a:hover{
+  background-color:  #008AB8;
+}
+.main_table{
+  padding-right: 30px;
+}
+.sidebar{
+  z-index: 1;
+  top: 0px;
+  background: #32373B;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: calc(100%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  font-family: 'Roboto Slab', serif;
+}
+
+.sidebar li{
+  list-style: none;
+}
+.sidebar li a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar li:hover{
+  background: #008AB8;
+}
+.feat-show{
+  display: none;
+}
+.main-page{
+  width: (100% - 250px);
+  margin-top: 45px;
+  padding: 20px;
+  margin-left: 250px;
+  background: url(back.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+#check:checked ~ .main-page{
+  margin-left: 0px;
+}
+.table{
+  margin-left: 10px;
+}

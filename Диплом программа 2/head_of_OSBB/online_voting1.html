@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="assets/online_voting.css">
+  </head>
+  <body>
+    <nav id="menuVertical">
+      <img class="icon" src="assets/images/logo.jpg" alt="">
+      <p class="surname">Прізвище І.Б.</p>
+      <ul class="menu">
+        <li style="background: #3e3e3e"><a href="online_voting.html"><span>Голосування</span></a></li>
+        <li><a href="tenant`s_appeal.html"><span>Звернення мешканців</span></a></li>
+        <li><a href="accountant_documentation.html"><span>Документація бухгалтера</span></a></li>
+        <ul>
+          <li><a href="accountant_report.html">№1</a></li>
+          <li><a href="accountant_family_composition.html">№2</a></li>
+          <li><a href="">№3</a></li>
+        </ul>
+      </ul>
+    </nav>
+    <div class="main_page">
+      <h1>Голосування</h1>
+      <input class="search_input" type="text" placeholder="Пошук">
+      <button type="submit">Пошук</button>
+      <label class="current_month" id="current_month">
+        <script type="text/javascript">
+        var months =["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+        var now = new Date();
+        document.getElementById("current_month").innerHTML = 'Поточний місяць - ' + months[now.getMonth()];
+        </script>
+      </label><br>
+      <button class="apply" type="button" name="button"><a href="#popup">Створити голосування</a></button>
+      <table>
+        <tr>
+          <th>Назва</th>
+          <th>Дата створення</th>
+          <th>Висновок</th>
+          <th>Проголосувало</th>
+          <th>Дії</th>
+        </tr>
+        <tr>
+          <td>Встановити відеоспостереження в будинку?</td>
+          <td>10.02.22</td>
+          <td>В процесі</td>
+          <td>15 з 115</td>
+          <td><button><a href="#popup1">Переглянути</a></button><button><a href="#">Завершити</a></button></td>
+        </tr>
+        <tr>
+          <td>Облаштування дитячого майданчика, збір по 50 грн з квартири</td>
+          <td>01.04.22</td>
+          <td>Прийнято</td>
+          <td>110 з 115</td>
+          <td><button><a href="#popup1">Переглянути</a></button></td>
+        </tr>
+        <tr>
+          <td>Прибрати парковку біля будинку</td>
+          <td>10.02.22</td>
+          <td>Не прийнято</td>
+          <td>34 з 115</td>
+          <td><button><a href="#popup1">Переглянути</a></button></td>
+        </tr>
+      </table>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup_body">
+      <div class="popup_content">
+        <a href="##" class="popup_close">X</a>
+        <div class="popup_title">Створити опитування</div>
+        <div class="popup_text">
+          <label>Назва</label><input type="text" name="" value=""><br>
+          <label>Варіанти відповіді</label><br>
+          <input type="checkbox" name="" value=""><label>Згоден</label><br>
+          <input type="checkbox" name="" value=""><label>Не згоден</label><br>
+          <input type="checkbox" name="" value=""><label>Утримаюсь</label><br>
+          <button type="submit" name="button">Додати новий варіант</button>
+          <button type="submit" name="button">Створити голосування</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup1">
+    <div class="popup_body">
+      <div class="popup_content">
+        <a href="##" class="popup_close">X</a>
+        <div class="popup_title">Перегляд голосування</div>
+        <div class="popup_table">
+          <table>
+            <tr>
+              <th>№ квартири</th>
+              <th>ПІБ</th>
+              <th>Телефон</th>
+              <th>Голос</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Іванов І.І</td>
+              <td>+380990000000</td>
+              <td>Так</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

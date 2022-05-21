@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="assets/tenant`s_appeal.css">
+  </head>
+  <body>
+    <nav id="menuVertical">
+      <img class="icon" src="assets/images/logo.jpg" alt="">
+      <p class="surname">Прізвище І.Б.</p>
+      <ul class="menu">
+        <li><a href="accountant_documentation.html"><span>Документація бухгалтера</span></a></li>
+        <ul>
+          <li><a href="accountant_report.html">№1</a></li>
+          <li><a href="accountant_family_composition.html">№2</a></li>
+          <li><a href="">№3</a></li>
+        </ul>
+        <li><a href="online_voting.html"><span>Голосування</span></a></li>
+        <li style="background: #3e3e3e"><a href="tenant`s_appeal.html"><span>Звернення мешканців</span></a></li>
+      </ul>
+    </nav>
+    <div class="main_page">
+      <h1>Звернення до голови</h1>
+          <input class="search_input" type="text" placeholder="Пошук">
+          <button type="submit">Пошук</button>
+          <label class="current_month" id="current_month">
+            <script type="text/javascript">
+            var months =["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+            var now = new Date();
+            document.getElementById("current_month").innerHTML = 'Поточний місяць - ' + months[now.getMonth()];
+          </script>
+          </label>
+        <table>
+          <tr>
+            <th>№</th>
+            <th>Дата створення</th>
+            <th>Опис</th>
+            <th>Статус</th>
+            <th>Коментарі</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Скарга<br>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано<br> 05.07.22</td>
+            <td><button><a href="#popup">Відповісти</a></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>01.04.22</td>
+            <td>Немає опалення </td>
+            <td>Скасовано<br> 02.04.22</td>
+            <td><button><a href="#popup">Відповісти</a></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td><button><a href="#popup">Відповісти</a></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td><button><a href="#popup">Відповісти</a></button></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td>Лампочку змінили</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td>Лампочку змінили</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td>Лампочку змінили</td>
+          </tr>
+        </table>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <a href="##" class="popup_close">X</a>
+          <div class="popup_title">Відповідь на звернення</div>
+          <div class="popup_text">
+            <textarea name="text_for_appeal" rows="8" cols="80"></textarea><br>
+            <button type="button" name="button_for_appeal">Відправити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

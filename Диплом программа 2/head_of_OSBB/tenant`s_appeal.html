@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href=".\assets\tenant`s_appeal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e0d14f0a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="menuV">
+      <nav id="menuVertical">
+        <img class="naming" src=".\assets\images\logo.png" alt="">
+        <hr>
+        <ul class="menu">
+          <li><a href="online_voting.html"><span>Голосування</span></a></li>
+          <li style="background: #690500"><a href="tenant`s_appeal.html"><span>Звернення мешканців</span></a></li>
+          <li>
+               <a href="#" class="feat-btn">Документація бухгалтера
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="accountant_family_composition.html">Реєстр співвласників</a></li>
+                  <li><a href="accountant_report.html">Звіт</a></li>
+               </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main_page">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" id="current_month" style="color:#BB6B00; margin-top:2px;"></a>
+        </li>
+        <li class="nav-item">
+          <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Пошук">
+            <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown_menu">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              <label>Прізвище І.Б.  <img src=".\assets\images\logo.jpg" width="32" height="32" class="rounded-circle"></img></label>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Профіль</a></li>
+              <li><a class="dropdown-item" href="#">Налаштування</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Вийти</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="main_table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">№</th>
+            <th scope="col">Дата створення</th>
+            <th scope="col">Опис</th>
+            <th scope="col">Статус</th>
+            <th scope="col">Коментарі</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано<br> 05.07.22</td>
+            <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#form_modal">Відповісти</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>01.04.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#form_modal">Відповісти</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>10.02.22</td>
+            <td>Перегоріла лампочка на першому під'їзді</td>
+            <td>Виконано 05.07.22</td>
+            <td>Лампочку змінили</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript">
+    $('.feat-btn').click(function(){
+           $('nav ul .feat-show').toggleClass("show");
+           $('nav li .feat-btn').toggleClass("show");
+         });
+    </script>
+    <script type="text/javascript">
+    var months =["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
+    var now = new Date();
+    document.getElementById("current_month").innerHTML = 'Поточний місяць - ' + months[now.getMonth()];
+  </script>
+</body>
+</html>
